@@ -41,6 +41,8 @@
           <div class="project-box h-100 p-3 text-center">
             <img
               src="images/poem-generator.png"
+              data-bs-toggle="tooltip"
+              title="Generate an original poem using a topic of your choice."
               class="img-fluid project-image poem-image"
               alt="Screenshot of the AI Poem Generator"
             />
@@ -61,6 +63,8 @@
           <div class="project-box h-100 p-3 text-center">
             <img
               src="images/weather-app.png"
+              data-bs-toggle="tooltip"
+              title="Check current weather conditions and forecasts for selected cities."
               class="img-fluid project-image weather-image"
               alt="Screenshot of the Weather App showing the Detroit forecast"
             />
@@ -81,7 +85,9 @@
           <div class="project-box h-100 p-3 text-center">
             <img
               src="images/world-clock.png"
-              class="img-fluid project-image clock-image"
+              data-bs-toggle="tooltip"
+              title="View the current time in different cities around the world."
+              class="img-fluid project-image world-clock-image"
               alt="Screenshot of the World Clock showing Detroit, London, and Bangkok"
             />
 
@@ -106,6 +112,16 @@
         >nomnntsuab@gmail.com
       </a>
     </section>
-</footer>
+<script>
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+
+  [...tooltipTriggerList].forEach(
+    (tooltipTriggerEl) => {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    }
+  );
+</script>
   </body>
 </html>

@@ -324,8 +324,9 @@ p {
   display: block;
   width: 100%;
   height: 230px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
+  background-color: #8eae8b;
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: var(--box-shadow);
