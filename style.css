@@ -1,0 +1,322 @@
+:root {
+  --primary-color: #258877;
+  --secondary-color: #bad8b6;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background: #e1eacd;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.custom-navbar {
+  background-color: #cbd9c2;
+  margin: 10px 15px 0;
+  border-radius: 8px;
+  padding: 8px 15px;
+}
+
+.btn-custom {
+  background-color: #258877;
+  color: white;
+  border: 1px solid #258877;
+}
+
+.btn-custom:hover {
+  background-color: #1d6d60;
+  color: white;
+}
+
+.btn-outline-custom {
+  color: #258877;
+  border: 1px solid #258877;
+}
+
+.btn-outline-custom:hover {
+  background-color: #258877;
+  color: white;
+}
+
+.project-box {
+  background: var(--secondary-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.project-box h3 {
+  color: var(--primary-color);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.project-box p {
+  background: transparent;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.btn-project {
+  background: var(--primary-color);
+  color: white;
+  margin-top: auto;
+}
+
+.btn-project:hover {
+  background: #1d6d60;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .project-box {
+    height: 100%;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.project-preview {
+  min-height: 230px;
+  border-radius: 12px;
+  padding: 25px 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+.project-preview h3 {
+  font-size: 21px;
+  margin: 10px 0;
+}
+
+.project-preview p {
+  background: none;
+  box-shadow: none;
+  padding: 5px;
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.preview-icon {
+  font-size: 45px;
+}
+
+.poem-preview {
+  background: #e1eacd;
+  color: #37685b;
+}
+
+.poem-lines {
+  width: 75%;
+  margin-top: 15px;
+}
+
+.poem-lines span {
+  display: block;
+  height: 3px;
+  background: #7da99a;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.poem-lines span:nth-child(2) {
+  width: 75%;
+}
+
+.poem-lines span:nth-child(3) {
+  width: 50%;
+}
+
+.weather-preview {
+  background: #dce9e6;
+  color: #37685b;
+}
+
+.weather-details {
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.clock-preview {
+  background: #dce5d4;
+  color: #37685b;
+}
+
+.clock-cities {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.clock-cities span {
+  background: #bad8b6;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.about-intro {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.about-intro p {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.home-page::after {
+  content: "🌿";
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 12px;
+  padding: 90px 10px;
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+ @media (max-width: 767px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .email-link {
+    font-size: 20px;
+    overflow-wrap: anywhere;
+  }
+
+  .navigation-links a {
+    margin: 10px;
+  }
+
+  .project-image {
+    height: 190px;
+  }
+
+  .about-intro {
+    padding: 0 15px;
+  }
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: var(--box-shadow);
+}
