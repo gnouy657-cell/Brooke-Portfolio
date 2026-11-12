@@ -331,9 +331,8 @@ p {
   box-shadow: var(--box-shadow);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .project-image {
-    height: 230px;
     object-fit: contain;
     background-color: white;
   }
