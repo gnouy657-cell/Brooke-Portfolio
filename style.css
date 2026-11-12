@@ -325,9 +325,18 @@ p {
   width: 100%;
   height: 230px;
   object-fit: cover;
+  object-position: center;
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 767px) {
+  .project-image {
+    height: 230px;
+    object-fit: contain;
+    background-color: white;
+  }
 }
 
 .project-box {
