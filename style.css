@@ -7,6 +7,8 @@
 body {
   background: #e1eacd;
   margin: 0;
+  width: 100%;
+  padding-bottom: 60px;
 }
 
 h1,
@@ -17,7 +19,6 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
   margin-bottom: 20px;
 }
 
@@ -28,6 +29,14 @@ h2 {
 h3 {
   font-size: 24px;
   opacity: 0.7;
+}
+
+body h1 {
+  margin-bottom: 15px;
+}
+
+body h3 {
+  margin-bottom: 30px;
 }
 
 p {
@@ -70,6 +79,11 @@ p {
   color: var(--primary-color);
   text-align: center;
   display: block;
+  margin: 30px auto 45px;
+}
+
+.home-page {
+  text-align: center;
 }
 
 .email-link {
@@ -86,7 +100,7 @@ p {
 
 .custom-navbar {
   background-color: #cbd9c2;
-  margin: 10px 15px 0;
+  margin: 25px 15px 0;
   border-radius: 8px;
   padding: 8px 15px;
 }
@@ -95,21 +109,28 @@ p {
   background-color: #258877;
   color: white;
   border: 1px solid #258877;
+   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.30);
 }
 
 .btn-custom:hover {
   background-color: #1d6d60;
   color: white;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.38);
+  transform: translateY(-2px);
 }
 
 .btn-outline-custom {
   color: #258877;
   border: 1px solid #258877;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
 .btn-outline-custom:hover {
   background-color: #258877;
   color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.22);
+  transform: translateY(-2px);
 }
 
 .project-box {
@@ -265,9 +286,8 @@ p {
   content: "🌿";
   display: block;
   text-align: center;
-  font-size: 40px;
-  letter-spacing: 12px;
-  padding: 90px 10px;
+  font-size: 35px;
+  padding: 45px 10px;
   opacity: 0.8;
 }
 
@@ -302,10 +322,6 @@ p {
     margin: 10px;
   }
 
-  .project-image {
-    height: 190px;
-  }
-
   .about-intro {
     padding: 0 15px;
   }
@@ -314,9 +330,35 @@ p {
   display: block;
   width: 100%;
   height: 230px;
-  object-fit: contain;
+  object-fit: cover;
   background: white;
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: var(--box-shadow);
+}
+
+.project-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
+.home-hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.home-hero h2 {
+  margin-bottom: 20px !important;
+}
+
+.home-hero h1 {
+  margin-bottom: 20px !important;
 }
