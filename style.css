@@ -103,13 +103,15 @@ p {
   margin: 25px 15px 0;
   border-radius: 8px;
   padding: 8px 15px;
+  margin-top: 20px;
 }
 
 .btn-custom {
   background-color: #258877;
   color: white;
   border: 1px solid #258877;
-   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.30);
+  transition: all 0.3s ease;
 }
 
 .btn-custom:hover {
@@ -300,15 +302,6 @@ p {
     font-size: 32px;
   }
 
- @media (max-width: 767px) {
-  h1 {
-    font-size: 48px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
   h3 {
     font-size: 20px;
   }
@@ -325,6 +318,8 @@ p {
   .about-intro {
     padding: 0 15px;
   }
+}
+
 
 .project-image {
   display: block;
@@ -353,6 +348,7 @@ p {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .home-hero h2 {
