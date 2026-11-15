@@ -341,7 +341,8 @@ p {
 }
 
 .projects-section h2 {
-   margin-bottom: 60px !important;
+  margin-bottom: 60px !important;
+  padding-bottom: 50px;
 }
 
 /* CONTAINER */
