@@ -20,15 +20,19 @@ h3 {
 
 h1 {
   margin-bottom: 20px;
+  color: black;
 }
 
 h2 {
   font-size: 48px;
+  color: black;
+  font-family: 'Shantell Sans', sans-serif;
 }
 
 h3 {
   font-size: 24px;
   opacity: 0.7;
+  color: black
 }
 
 body h1 {
@@ -67,7 +71,7 @@ p {
 .contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: black;
 }
 
 .about-link {
@@ -161,7 +165,7 @@ p {
 
 .btn-project {
   background: var(--primary-color);
-  color: white;
+  color: black;
   margin-top: auto;
 }
 
@@ -272,6 +276,7 @@ p {
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
+  color: black
 }
 
 .about-intro p {
