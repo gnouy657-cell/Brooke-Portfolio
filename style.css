@@ -5,6 +5,11 @@
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+.projects-section h2 {
+  background: yellow !important;
+  outline: 3px solid red !important;
+}
+
 /* GENERAL STYLES */
 
 body {
@@ -394,7 +399,3 @@ p {
   }
 }
 
-.projects-section h2 {
-  background: yellow !important;
-  outline: 3px solid red !important;
-}
