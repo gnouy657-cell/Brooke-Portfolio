@@ -393,3 +393,8 @@ p {
     padding: 0 15px;
   }
 }
+
+.projects-section h2 {
+  background: yellow !important;
+  outline: 3px solid red !important;
+}
