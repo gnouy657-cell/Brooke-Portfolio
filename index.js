@@ -1,4 +1,5 @@
 
+const book = document.getElementById("book");
 const bookCover = document.getElementById("book-cover");
 const bookInterior = document.getElementById("book-interior");
 
@@ -13,52 +14,69 @@ const pageNumber = document.getElementById("page-number");
 const spreads = document.querySelectorAll(".book-spread");
 
 let currentPage = -1;
+const totalPages = spreads.length;
 
-// Open the book
+
 openBook.addEventListener("click", () => {
+  book.classList.add("is-open");
   bookCover.classList.add("hidden");
   bookInterior.classList.add("visible");
+
   currentPage = 0;
   updateBook();
 });
 
-// Close the book
+
 closeBook.addEventListener("click", () => {
+  book.classList.remove("is-open");
   bookInterior.classList.remove("visible");
   bookCover.classList.remove("hidden");
+
   currentPage = -1;
   updateBook();
 });
 
-// Next page
-nextPage.addEventListener("click", () => {
-  if (currentPage < spreads.length - 1) {
+
+nextPage.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (currentPage < totalPages - 1) {
     currentPage++;
     updateBook();
   }
 });
 
-// Previous page
-prevPage.addEventListener("click", () => {
+
+prevPage.addEventListener("click", (event) => {
+  event.preventDefault();
+
   if (currentPage > 0) {
     currentPage--;
     updateBook();
   }
 });
 
-// Update displayed spread
+
 function updateBook() {
+
   spreads.forEach((spread, index) => {
-    spread.classList.toggle("active", index === currentPage);
+    spread.classList.toggle(
+      "active",
+      index === currentPage
+    );
   });
 
   pageNumber.textContent =
     currentPage === -1
       ? "Cover"
-      : `Project ${currentPage + 1} of ${spreads.length}`;
+      : `Project ${currentPage + 1} of ${totalPages}`;
 
-  prevPage.disabled = currentPage <= 0;
-  nextPage.disabled = currentPage >= spreads.length - 1;
-  nextPage.style.display = currentPage === spreads.length - 1 ? "none" : "block";
-closeBook.style.display = currentPage === spreads.length - 1 ? "block" : "none";
+  prevPage.style.display =
+    currentPage > 0 ? "block" : "block";
+
+  prevPage.hidden = currentPage <= 0;
+
+  nextPage.hidden = currentPage >= totalPages - 1;
+
+  closeBook.hidden = currentPage !== totalPages - 1;
 }
