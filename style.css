@@ -281,16 +281,6 @@ p {
   margin-bottom: 20px;
 }
 
-.book-cover p {
-  color: var(--book-dark-green);
-  background: var(--book-yellow);
-  padding: 10px 18px;
-  border-radius: 6px;
-  margin-top: 10px;
-  font-size: 16px;
-  box-shadow: none;
-}
-
 .book-cover span {
   color: var(--book-cream);
   margin-top: 40px;
