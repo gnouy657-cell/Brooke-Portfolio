@@ -49,39 +49,6 @@ p {
   text-align: center;
 }
 
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: black;
-}
-
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-  margin: 30px auto 45px;
-}
-
 .home-page {
   text-align: center;
 }
@@ -200,21 +167,6 @@ p {
   transform: translateY(-2px);
 }
 
-.btn-outline-custom {
-  background-color: #dce5d4;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  box-shadow: var(--box-shadow);
-  transition: all 0.3s ease;
-}
-
-.btn-outline-custom:hover {
-  background-color: var(--primary-color);
-  color: white;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.22);
-  transform: translateY(-2px);
-}
-
 .btn-project {
   background: var(--primary-color);
   color: black;
@@ -269,116 +221,8 @@ p {
   box-shadow: var(--box-shadow);
 }
 
-.project-preview {
-  min-height: 230px;
-  border-radius: 12px;
-  padding: 25px 15px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: var(--box-shadow);
-}
-
-.project-preview h3 {
-  font-size: 21px;
-  margin: 10px 0;
-}
-
-.project-preview p {
-  background: none;
-  box-shadow: none;
-  padding: 5px;
-  font-size: 15px;
-  margin: 5px 0;
-}
-
-.preview-icon {
-  font-size: 45px;
-}
-
-.poem-preview {
-  background: #e1eacd;
-  color: #37685b;
-}
-
-.poem-lines {
-  width: 75%;
-  margin-top: 15px;
-}
-
-.poem-lines span {
-  display: block;
-  height: 3px;
-  background: #7da99a;
-  border-radius: 5px;
-  margin: 10px auto;
-}
-
-.poem-lines span:nth-child(2) {
-  width: 75%;
-}
-
-.poem-lines span:nth-child(3) {
-  width: 50%;
-}
-
-.weather-preview {
-  background: #dce9e6;
-  color: #37685b;
-}
-
-.weather-details {
-  display: flex;
-  gap: 20px;
-  font-size: 25px;
-  margin-top: 15px;
-}
-
-.clock-preview {
-  background: #dce5d4;
-  color: #37685b;
-}
-
-.clock-cities {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-.clock-cities span {
-  background: #bad8b6;
-  padding: 7px 12px;
-  border-radius: 20px;
-  font-size: 13px;
-}
-
-.about-intro {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 20px;
-  color: black;
-}
-
-.about-intro p {
-  background: none;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.7;
-}
-
 .projects-section {
   padding: 35px 30px;
-}
-
-.projects-section h2 {
-  margin-bottom: 30px !important;
 }
 
 .book-container {
@@ -652,14 +496,6 @@ p {
     font-size: 20px;
     overflow-wrap: anywhere;
   }
-
-  .navigation-links a {
-    margin: 10px;
-  }
-
-  .about-intro {
-    padding: 0 15px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -861,35 +697,8 @@ p {
   transform: translateY(-5px);
 }
 
-.home-page::after,
-.projects-page::after,
-.about-page::after,
-.contact-page::after {
-  content: "🌿";
-  display: block;
-  text-align: center;
-  font-size: 35px;
-  opacity: 0.8;
-}
-
-.home-page::after,
-.projects-page::after {
-  padding: 45px 10px;
-}
-
-.about-page::after {
-  padding: 45px 10px;
-}
-
-.contact-page::after {
-  padding: 150px 30px 50px;
-}
-
-
-/* HOMEPAGE WORK INQUIRY SECTION */
-
 .home-contact {
-  max-width: 900px;
+  max-width: 760px;
   margin: 50px auto 25px;
   padding: 0 15px;
 }
@@ -907,12 +716,15 @@ p {
 .inquiry-text h2 {
   font-family: "Shantell Sans", cursive;
   font-size: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .inquiry-text p {
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 18px;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .home-email {
@@ -947,7 +759,6 @@ p {
   color: #185c50;
 }
 
-/* HOMEPAGE FOOTER */
 .home-footer {
   max-width: 550px;
   width: 65%;
@@ -963,8 +774,12 @@ p {
   color: #526b58;
 }
 
-
-/* MOBILE RESPONSIVENESS */
+.footer-leaf {
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 3px;
+  vertical-align: middle;
+}
 
 @media (max-width: 576px) {
 
@@ -981,5 +796,4 @@ p {
   .home-contact {
     margin-top: 35px;
   }
-
 }
