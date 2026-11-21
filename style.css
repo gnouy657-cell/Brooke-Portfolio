@@ -884,3 +884,102 @@ p {
 .contact-page::after {
   padding: 150px 30px 50px;
 }
+
+
+/* HOMEPAGE WORK INQUIRY SECTION */
+
+.home-contact {
+  max-width: 900px;
+  margin: 50px auto 25px;
+  padding: 0 15px;
+}
+
+.work-inquiry {
+  background-color: #6f967c;
+  padding: 25px 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.inquiry-text h2 {
+  font-family: "Shantell Sans", cursive;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.inquiry-text p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.home-email {
+  text-align: center;
+  margin: 25px 0 20px;
+}
+
+.home-email a {
+  color: #258877;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home-email a:hover {
+  text-decoration: underline;
+}
+
+.home-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.home-social-links a {
+  color: #258877;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+
+.home-social-links a:hover {
+  color: #185c50;
+}
+
+/* HOMEPAGE FOOTER */
+.home-footer {
+  max-width: 550px;
+  width: 65%;
+  margin: 20px auto 0;
+  padding: 12px 10px;
+  text-align: center;
+  border-top: 1px solid #bad8b6;
+}
+
+.home-footer p {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #526b58;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 576px) {
+
+  .work-inquiry {
+    padding: 22px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .inquiry-text h2 {
+    font-size: 26px;
+  }
+
+  .home-contact {
+    margin-top: 35px;
+  }
+
+}
