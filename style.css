@@ -256,11 +256,19 @@ p {
   align-items: center;
   padding: 30px;
   text-align: center;
-  background: linear-gradient(
-    135deg,
-    var(--book-green),
-    var(--book-dark-green)
-  );
+  background:
+  radial-gradient(circle at 18% 25%, rgba(255, 205, 92, 0.32), transparent 22%),
+  radial-gradient(circle at 82% 72%, rgba(255, 205, 92, 0.28), transparent 25%),
+  radial-gradient(circle at 12% 18%, #f5d477 0 2px, transparent 3px),
+  radial-gradient(circle at 30% 25%, #e8bd58 0 2px, transparent 3px),
+  radial-gradient(circle at 75% 16%, #f5d477 0 2px, transparent 3px),
+  radial-gradient(circle at 88% 38%, #e8bd58 0 2px, transparent 3px),
+  radial-gradient(circle at 15% 68%, #f5d477 0 2px, transparent 3px),
+  radial-gradient(circle at 65% 85%, #e8bd58 0 2px, transparent 3px),
+  radial-gradient(circle at 48% 12%, #f5d477 0 1.5px, transparent 3px),
+  radial-gradient(circle at 92% 82%, #f5d477 0 2px, transparent 3px),
+  radial-gradient(circle at 42% 90%, #e8bd58 0 2px, transparent 3px),
+  linear-gradient(135deg, var(--book-green), var(--book-dark-green));
   color: var(--book-cream);
   border-radius: 8px 14px 14px 8px;
   box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.3);
@@ -282,7 +290,8 @@ p {
 
 .book-cover h2 {
   color: var(--book-cream);
-  font-size: 32px;
+  font-family: "Zeyada", cursive;
+  font-size: 70px;
   margin-bottom: 20px;
 }
 
@@ -543,6 +552,15 @@ p {
     right: 10px;
     bottom: 8px;
   }
+
+  .book-cover span {
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  .open-book {
+    bottom: 12px;
+  }
 }
 
 .about-section {
@@ -706,6 +724,8 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .inquiry-text h2 {
@@ -724,7 +744,7 @@ p {
 
 .home-email {
   text-align: center;
-  margin: 25px 0 20px;
+  margin: 32px 0 20px;
 }
 
 .home-email a {
@@ -760,7 +780,6 @@ p {
   margin: 20px auto 0;
   padding: 12px 10px;
   text-align: center;
-  border-top: 1px solid #bad8b6;
 }
 
 .home-footer p {
