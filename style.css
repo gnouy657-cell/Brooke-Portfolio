@@ -729,12 +729,13 @@ p {
 }
 
 .inquiry-text h2 {
-  font-family: "Shantell Sans", cursive;
+  font-family: 'Give You Glory', cursive;
   font-size: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .inquiry-text p {
+  margin-top: -5px;
   margin-bottom: 0;
   font-size: 18px;
   background-color: transparent;
@@ -775,24 +776,30 @@ p {
 }
 
 .home-footer {
-  max-width: 550px;
-  width: 65%;
-  margin: 20px auto 0;
-  padding: 12px 10px;
+  width: 100%;
+  max-width: none;
   text-align: center;
+  padding: 20px 15px 10px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .home-footer p {
   margin-bottom: 0;
   font-size: 12px;
   color: #526b58;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
 }
 
 .footer-leaf {
-  font-size: 18px;
-  display: inline-block;
-  margin-left: 3px;
-  vertical-align: middle;
+  display: block;
+  text-align: center;
+  margin-top: 8px;
 }
 
 .contact-footer {
